@@ -1,1 +1,122 @@
-answers for chapter2
+Commands used:
+git init
+	Initialized empty Git repository in /home/ubuntu01/Documents/jmdipong/githubpractice2/.git/
+
+git clone https://github.com/joseipong/ipong_githubpractice.git
+	Cloning into 'ipong_githubpractice'...
+	remote: Counting objects: 29, done.
+	remote: Compressing objects: 100% (11/11), done.
+	remote: Total 29 (delta 1), reused 26 (delta 1)
+	Unpacking objects: 100% (29/29), done.
+	Checking connectivity... done.
+
+cd ipong_githubpractice
+mkdir chptr1 chptr2 chptr3 chptr4 chptr5 chptr6
+cd chptr1
+nano README.txt
+nano chapter1_answers.txt
+cd ..
+cd chptr2
+nano README.txt
+nano chapter2_answers.txt
+cd ..
+cd chptr3
+nano README.txt
+nano chapter3_answers.txt
+cd ..
+cd chptr4
+nano README.txt
+nano chapter4_answers.txt
+cd ..
+cd chptr5
+nano README.txt
+nano chapter5_answers.txt
+cd ..
+cd chptr6
+nano README.txt
+nano chapter6_answers.txt
+cd ..
+git status
+On branch master
+	Your branch is up-to-date with 'origin/master'.
+
+	Untracked files:
+	  (use "git add <file>..." to include in what will be committed)
+
+		chptr1/
+		chptr2/
+		chptr3/
+		chptr4/
+		chptr5/
+		chptr6/
+
+	nothing added to commit but untracked files present (use "git add" to track)
+
+git add "*.txt"
+git status
+	On branch master
+	Your branch is up-to-date with 'origin/master'.
+
+	Changes to be committed:
+	  (use "git reset HEAD <file>..." to unstage)
+
+		new file:   chptr1/README.txt
+		new file:   chptr1/chapter1_answers.txt
+		new file:   chptr2/README.txt
+		new file:   chptr2/chapter2_answers.txt
+		new file:   chptr3/README.txt
+		new file:   chptr3/chapter3_answers.txt
+		new file:   chptr4/README.txt
+		new file:   chptr4/chapter4_answers.txt
+		new file:   chptr5/README.txt
+		new file:   chptr5/chapter5_answers.txt
+		new file:   chptr6/README.txt
+		new file:   chptr6/chapter6_answers.txt
+
+git commit -m "First commit"
+	[master 94ffeec] First commit
+	 12 files changed, 15 insertions(+)
+	 create mode 100644 chptr1/README.txt
+	 create mode 100644 chptr1/chapter1_answers.txt
+	 create mode 100644 chptr2/README.txt
+	 create mode 100644 chptr2/chapter2_answers.txt
+	 create mode 100644 chptr3/README.txt
+	 create mode 100644 chptr3/chapter3_answers.txt
+	 create mode 100644 chptr4/README.txt
+	 create mode 100644 chptr4/chapter4_answers.txt
+	 create mode 100644 chptr5/README.txt
+	 create mode 100644 chptr5/chapter5_answers.txt
+	 create mode 100644 chptr6/README.txt
+	 create mode 100644 chptr6/chapter6_answers.txt
+
+git status
+	On branch master
+	Your branch is ahead of 'origin/master' by 1 commit.
+	  (use "git push" to publish your local commits)
+
+	nothing to commit, working directory clean
+
+git log
+	commit 94ffeece256b739b467ca35d54fbf9726a046532
+	Author: joseipong <ijm29game@gmail.com>
+	Date:   Thu Jan 29 11:26:52 2015 +0800
+
+	    First commit
+
+git remote
+    origin
+
+git push origin master
+	Username for 'https://github.com': joseipong
+	Password for 'https://joseipong@github.com': 
+	Counting objects: 13, done.
+	Compressing objects: 100% (9/9), done.
+	Writing objects: 100% (12/12), 1.08 KiB | 0 bytes/s, done.
+	Total 12 (delta 0), reused 0 (delta 0)
+	To https://github.com/joseipong/ipong_githubpractice.git
+	   0c6f8a1..94ffeec  master -> master
+
+
+
+
+
