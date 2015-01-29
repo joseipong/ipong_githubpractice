@@ -1,0 +1,4 @@
+Commands used:
+apt-get install git
+git config --global user.name "joseipong"
+git config --global user.email ijm29game@gmail.com
