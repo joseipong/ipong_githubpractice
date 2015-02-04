@@ -1,1 +1,1 @@
-chap1 readme
+Chapter 1 introduces the concept of a version control system. It states how to install Git and how to configure it for the first time.

@@ -1,1 +1,59 @@
-answers for chapter2
+Contributing to a project:
+git clone john@githost:simplegit.git
+Initialized empty Git repository in /home/john/simplegit/.git/
+...
+cd simplegit/
+nano lib/simplegit.rb
+git commit -am 'removed invalid default value'
+[master 738ee87] removed invalid default value
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+ git push origin master
+To john@githost:simplegit.git
+ ! [rejected]        master -> master (non-fast forward)
+error: failed to push some refs to 'john@githost:simplegit.git'
+
+git fetch origin
+...
+From john@githost:simplegit
+ + 049d078...fbff5bc master     -> origin/master
+
+ git merge origin/master
+Merge made by recursive.
+ TODO |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+ git push origin master
+...
+To john@githost:simplegit.git
+   fbff5bc..72bbc59  master -> master
+
+git log --no-merges issue54..origin/master
+commit 738ee872852dfaa9d6634e0dea7a324040193016
+Author: John Smith <jsmith@example.com>
+Date:   Fri May 29 16:01:27 2009 -0700
+
+   removed invalid default value
+
+git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+
+git merge issue54
+Updating fbff5bc..4af4298
+Fast forward
+ README           |    1 +
+ lib/simplegit.rb |    6 +++++-
+ 2 files changed, 6 insertions(+), 1 deletions(-)
+
+git merge origin/master
+Auto-merging lib/simplegit.rb
+Merge made by recursive.
+ lib/simplegit.rb |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+git push origin master
+...
+To jessica@githost:simplegit.git
+   72bbc59..8059c15  master -> master
+
