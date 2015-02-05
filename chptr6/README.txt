@@ -1,1 +1,1 @@
-README for chap2
+Chapter 6 is all about Git on Github. It talks about how to set up an account on Github. It guides the reader on how to add SSH keys to your personal account, how to add a picture to your account, how to add email addresses and all other things about setting up an account. It also tells us how to fork a project, how to create repositories directly on Github, how to add people to a project, how to create teams and how to use the Github API.

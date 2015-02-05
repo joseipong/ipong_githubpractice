@@ -640,6 +640,7 @@ Date:   Tue Aug 26 19:48:51 2008 +0800
 
     Signed-off-by: Scott Chacon <schacon@example.com>
 
+git config --global alias.visual "!gitk"
 
 
 
